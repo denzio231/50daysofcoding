@@ -13,7 +13,7 @@ def check_duplicates(list_str):
         
         for robins in list_str:
             if items == robins and i != r:
-                return 'Duplicates'
+                return items
             r += 1
         r = 1
         i += 1
