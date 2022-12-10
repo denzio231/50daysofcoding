@@ -1,5 +1,5 @@
 def str_range(num):
-	return str(list(range(0,num))).replace(',','.').replace('[','').replace(']','')
+	return str(list(range(0,num))).replace(',','.').replace('', ' ' ).replace('[','').replace (']', '') 
 	
 def nameswiths(names):
 	to_return = {}
