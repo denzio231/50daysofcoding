@@ -20,7 +20,6 @@ def prime_numbers(number):
             if nums % nums2 == 0:
                 prime = False
         if prime:
-            print(nums)
             to_return.append(nums)
         prime = True
                 
