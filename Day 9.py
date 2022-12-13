@@ -11,15 +11,19 @@ def biggest_odd(numbers):
 
 def zeros_last(list):
     i = 0
+    Saved = list[:] 
+
     list = sorted(list)
     for num in list:
         if num == 0:
             i+=1
+    if i == 0:
+        return list
     
     for n in range(0,i):
-        list.remove(0)
-        list.append(0)
-    return list
+        Saved.remove(0)
+        Saved.append(0)
+    return Saved
             
 
 
@@ -30,7 +34,7 @@ def zeros_last(list):
 
 
 
-print(zeros_last([1,0,9,3,0,2]))
+print(zeros_last([1,0,9,3,2]))
 
 
 print(biggest_odd('23569'))
