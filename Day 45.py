@@ -1,4 +1,4 @@
-def word_count(string):
+def analyse_string(string):
 	char_count = 0
 	word_count = 0
 	special_count = 0
@@ -14,5 +14,5 @@ def word_count(string):
 			special_count +=1
 	if is_word:
 		word_count +=1
-	return [word_count,special_count,char_count]
-print(word_count('Python has a string format operator %. This functions analogously to printf format strings in C, e.g. "spam=%s eggs=%d" % ("blah", 2) evaluates to "spam=blah eggs=2".'))
+	return {'special char': special_count,'words':word_count,'total_char':char_count}
+print(analyse_string('Python has a string format operator %. This functions analogously to printf format strings in C, e.g. "spam=%s eggs=%d" % ("blah", 2) evaluates to "spam=blah eggs=2".'))
